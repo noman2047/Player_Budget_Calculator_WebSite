@@ -1,0 +1,13 @@
+#title h1{
+  color: #FF5E19;
+  font-family: 'Berkshire Swash', cursive;
+  font-size: 70px;
+}
+#title p{
+  color: white;
+}
+#title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
