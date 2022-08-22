@@ -11,3 +11,27 @@
   align-items: center;
   justify-content: center;
 }
+.goal{
+  display: flex;
+  justify-content:space-around;
+}
+body{
+  background-color:#434343;
+}
+
+#btn{
+  background-color:#A2A9AF;
+  color: white;
+}
+li{
+  font-size: 20px;
+}
+#card1 .card{
+  height: 340px;
+}
+#card2 .card{
+  height: 400px;
+}
+#card1 li{
+  line-height: 50px;
+}
