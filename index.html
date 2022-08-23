@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style/index.css">
-  <title>Document</title>
+  <title>Select Best Five</title>
 </head>
 <body>
   <header>
@@ -32,8 +32,8 @@
   </header>
   <main>
     <div class="container text-light mt-xl-5">
-      <div class="row">
-        <div class="col-3">
+      <div class="row mt-4">
+        <div class="col-12 col-sm-6 col-md-3 col-lg-3">
           <div class="card">
             <img src="img/Messi.jpeg" class="card-img-top img-fluid" alt="...">
             <div class="card-body bg-black">
@@ -44,12 +44,12 @@
                 <h6>120 Assist</h6>
               </div>
               <div class="card-body text-center">
-                <button id="btn" class="px-lg-5">SELECT</button>
+                <button id="btn" class="px-lg-5" onclick="addToPlayer(this)">SELECT</button>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-3">
+        <div class="col-12 col-sm-6 col-md-3 col-lg-3">
           <div class="card">
             <img src="img/Naymer1.jpeg" class="card-img-top img-fluid" alt="...">
             <div class="card-body bg-black">
@@ -60,12 +60,12 @@
                 <h6>120 Assist</h6>
               </div>
               <div class="card-body text-center">
-                <button id="btn" class="px-lg-5">SELECT</button>
+                <button id="btn" class="px-lg-5" onclick="addToPlayer(this)" >SELECT</button>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-3">
+        <div class="col-12 col-sm-6 col-md-3 col-lg-3">
           <div class="card">
             <img src="img/mbappé.jpg" class="card-img-top" alt="...">
             <div class="card-body bg-black">
@@ -76,84 +76,91 @@
                 <h6>120 Assist</h6>
               </div>
               <div class="card-body text-center">
-                <button id="btn" class="px-lg-5">SELECT</button>
+                <button id="btn"  onclick="addToPlayer(this)" class="px-lg-5">SELECT</button>
               </div>
             </div>
           </div>
         </div>
-        <div id="card1" class="col-3">
+        <div id="card1" class="col-12 col-sm-6 col-md-3 col-lg-3">
           <div class="card bg-black text-white">
-            <h3 class="text-center border-bottom border-4 border-danger p-2">Selected - V</h3>
-            <ol class="px-5">
-              <li>Lionel Messi</li>
-              <li>Kylian Mbappé</li>
-              <li>Neymar Jr</li>
-              <li>Renato Sanches</li>
-              <li>Keylor Navas</li>
+            <h3 class="text-center border-bottom border-4 border-danger p-2">Selected - <span id="count"></span></h3>
+            <ol class="px-5" id="playerName">
+             
             </ol>
           </div>
         </div>
       </div>
       <div class="row mt-2">
-        <div class="col-3">
+        <div class="col-12 col-sm-6 col-md-3 col-lg-3">
           <div class="card">
             <img src="img/fbl.jpg" class="card-img-top img-fluid" alt="...">
             <div class="card-body bg-black">
-              <h4 class="card-title text-center">Lionel Messi</h4>
+              <h4 class="card-title text-center">Vítor Machado</h4>
               <div class="goal">
                 <h6>36 Goal</h6>
                 <h6>*</h6>
                 <h6>120 Assist</h6>
               </div>
               <div class="card-body text-center">
-                <button id="btn" class="px-lg-5">SELECT</button>
+                <button id="btn"  onclick="addToPlayer(this)" class="px-lg-5">SELECT</button>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-3">
+        <div class="col-12 col-sm-6 col-md-3 col-lg-3">
           <div class="card">
             <img src="img/Sergio.jpeg" class="card-img-top img-fluid" alt="...">
             <div class="card-body bg-black">
-              <h4 class="card-title text-center">Neymar Jr</h4>
+              <h4 class="card-title text-center">Sergio Ramos</h4>
               <div class="goal">
                 <h6>36 Goal</h6>
                 <h6>*</h6>
                 <h6>120 Assist</h6>
               </div>
               <div class="card-body text-center">
-                <button id="btn" class="px-lg-5">SELECT</button>
+                <button id="btn"  onclick="addToPlayer(this)" class="px-lg-5">SELECT</button>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-3">
+        <div class="col-12 col-sm-6 col-md-3 col-lg-3">
           <div class="card">
             <img src="img/Vitor.jpg" class="card-img-top" alt="...">
             <div class="card-body bg-black">
-              <h4 class="card-title text-center">Kylian Mbappé</h4>
+              <h4 class="card-title text-center">Renato Sanches</h4>
               <div class="goal">
                 <h6>36 Goal</h6>
                 <h6>*</h6>
                 <h6>120 Assist</h6>
               </div>
               <div class="card-body text-center">
-                <button id="btn" class="px-lg-5">SELECT</button>
+                <button id="btn"  onclick="addToPlayer(this)" class="px-lg-5">SELECT</button>
               </div>
             </div>
           </div>
         </div>
-        <div id="card2" class="col-3">
+        <div id="card2" class="col-12 col-sm-6 col-md-3 col-lg-3">
           <div class="card bg-black text-white">
-            <h3 class="text-center border-bottom border-4 border-danger p-2">Selected - V</h3>
-            
+            <h3 class="text-center border-bottom border-4 border-danger p-2">Budget</h3>
+            <div class="text-center mt-1"><span class="pe-1 fs-6">Per Player </span> <input type="text" name="" id="perPlayer" class="w-50 py-1"></div>
+            <div class="text-center"><button id="calculat" class="bg-primary mt-3 w-75 text-white fs-5 ">Calculator</button></div>
+            <div class="text-center mt-1">
+              <span class="me-4 fs-5">Player Expenses</span><span class="fs-5">$ <span id="totalRate">500</span></span>
+            </div>
+            <div class="text-center mt-2"><span class="pe-2 fs-6">Manager :</span> <input type="text" name="" id="" class="w-50"></div>
+            <div class="text-center mt-2"><span class="pe-4 fs-6">Coach  :</span> <input type="text" name="" id="" class="w-50"></div>
+            <div class="text-center"><button class="bg-primary mt-3 w-75 text-white fs-5">Calculate Total</button></div>
+            <div class="text-center mt-3">
+              <span class="me-4 fs-5">Player Expenses</span><span class="fs-5 text-danger">$11000</span>
+            </div>
+    
           </div>
         </div>
       </div>
       <div class="row">
-        <div class="col-3">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
           <div class="card">
-            <img src="img/Messi.jpeg" class="card-img-top img-fluid" alt="...">
+            <img src="img/Messi.jpeg"  class="card-img-top img-fluid" alt="...">
             <div class="card-body bg-black">
               <h4 class="card-title text-center">Lionel Messi</h4>
               <div class="goal">
@@ -162,12 +169,12 @@
                 <h6>120 Assist</h6>
               </div>
               <div class="card-body text-center">
-                <button id="btn" class="px-lg-5">SELECT</button>
+                <button id="btn"  onclick="addToPlayer(this)" class="px-lg-5">SELECT</button>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-3">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
           <div class="card">
             <img src="img/Naymer1.jpeg" class="card-img-top img-fluid" alt="...">
             <div class="card-body bg-black">
@@ -178,12 +185,12 @@
                 <h6>120 Assist</h6>
               </div>
               <div class="card-body text-center">
-                <button id="btn" class="px-lg-5">SELECT</button>
+                <button id="btn"  onclick="addToPlayer(this)" class="px-lg-5">SELECT</button>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-3">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
           <div class="card">
             <img src="img/mbappé.jpg" class="card-img-top" alt="...">
             <div class="card-body bg-black">
@@ -194,7 +201,7 @@
                 <h6>120 Assist</h6>
               </div>
               <div class="card-body text-center">
-                <button id="btn" class="px-lg-5">SELECT</button>
+                <button id="btn"  onclick="addToPlayer(this)" class="px-lg-5">SELECT</button>
               </div>
             </div>
           </div>
@@ -212,4 +219,5 @@
   </main>
   
 </body>
+<script src="js/index.js"></script>
 </html>
