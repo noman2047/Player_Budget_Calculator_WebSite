@@ -21,15 +21,25 @@ function perPlayer(totalplayer){
   document.getElementById('coach').addEventListener('keyup',function (item){
     const coachBilleni=document.getElementById('coach');
     const perPlayerRate=item.target.value;
-    const coachBill=isItNumber(perPlayerRate);
-    coachBilleni.value=coachBill;
+    if(isNaN(perPlayerRate)){
+      alert("It is Not A Number");
+      coachBilleni.value="";
+    }
+    else{
+      coachBilleni.value=coachBill;
+    }
   })
   
   document.getElementById('manager').addEventListener('keyup',function (item){
     const managerBilleni=document.getElementById('manager');
     const perPlayerRate=item.target.value;
-    const managerBill=isItNumber(perPlayerRate);
-    managerBilleni.value=managerBill;
+    if(isNaN(perPlayerRate)){
+      alert("It is Not A Number");
+      managerBilleni.value="";
+    }
+    else{
+      managerBilleni.value=perPlayerRate;
+    }
   })
 }
 
