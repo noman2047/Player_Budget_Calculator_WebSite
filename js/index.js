@@ -77,7 +77,6 @@ function addToPlayer(player){
     li.innerText=eachPlayer;
     playerNames.appendChild(li)
     perPlayer(totalPlayer);
-
   }
 }
 
